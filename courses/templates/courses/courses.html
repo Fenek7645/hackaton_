@@ -1,0 +1,59 @@
+{% extends "main/layout.html" %}
+{% block title %}
+    Курсы
+{% endblock%}
+{% load static%}
+{% block content %}
+
+{% if user.is_authenticated %}
+  <body>
+    <div class="div">
+      <div class="bg-parent">
+        <div class="bg">
+          <div class="bg-child"></div>
+        </div>
+        <div class="frame-child"></div>
+        <div class="div1">ШКОЛА БЕЗОПАСНОСТИ</div>
+        <div class="div2">
+          <div class="div3">Курс</div>
+        </div>
+        <button class="button">
+          <div class="child"></div>
+          <div class="louze324gmailcom">{{user.username}}</div>
+        </button>
+        <b class="b">Основы безопасного поведения в сети интернет</b>
+        <button class="button1" href="url">
+          <div class="item"></div>
+          <b class="b1">Начать</b>
+        </button>
+        <div class="frame-item"></div>
+        <div class="frame-inner"></div>
+        <img class="icon" alt="" src="{% static 'courses/img/main_crs.png' %}" />
+      </div>
+    </div>
+  </body>
+{% else %}
+
+
+
+    <div class="auth-True">
+        <div class="btns_main_email">
+            <a href="{% url 'profile' %}"></a>
+
+        </div>
+    </div>
+
+<div class="auth">
+    <div class="btns_main_regestration">
+        <a href="{% url 'reg_home'%}">Регистрация</a>
+    </div>
+
+    <div class="btns_main_enter">
+        <a href="{% url 'enterens'%}">Вход</a>
+    </div>
+
+
+
+    
+{% endif %}
+{% endblock %}

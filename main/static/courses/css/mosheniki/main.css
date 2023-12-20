@@ -1,0 +1,336 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-asket-extended: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+    /* font sizes */
+    --font-size-45xl: 64px;
+    --font-size-17xl: 36px;
+    --font-size-5xl: 24px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-darkorchid: #b964ff;
+    --color-darkslategray: #3f3f3f;
+  
+    /* Border radiuses */
+    --br-smi: 13px;
+  }
+
+  .bg,
+  .bg-child {
+    position: absolute;
+    width: 1597px;
+    height: 998px;
+  }
+  .bg-child {
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+  }
+  .bg {
+    top: -88px;
+    left: -38px;
+  }
+  .child {
+    top: 0;
+    left: 0;
+    background-color: var(--color-darkorchid);
+    width: 1920px;
+    height: 93px;
+  }
+  .child,
+  .icon,
+  .item {
+    position: absolute;
+  }
+  .icon {
+    top: 1103px;
+    left: 540px;
+    width: 1724px;
+    height: 1724px;
+    object-fit: cover;
+  }
+  .item {
+    top: 2307px;
+    left: 0;
+    background-color: var(--color-darkorchid);
+    width: 1920px;
+    height: 93px;
+  }
+  .div2,
+  .div3,
+  .div4 {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 2264px;
+    height: 2827px;
+  }
+  .div3,
+  .div4 {
+    top: 2342px;
+    left: 97px;
+    font-weight: 500;
+    display: inline-block;
+    width: 366px;
+    height: 24px;
+  }
+  .div4 {
+    top: 34px;
+    left: 98px;
+    height: 38px;
+  }
+  .div5,
+  .div6,
+  .inner {
+    position: absolute;
+    width: 101px;
+    height: 23px;
+  }
+  .div6 {
+    top: 0;
+    left: 0;
+    font-weight: 300;
+    display: inline-block;
+  }
+  .div5,
+  .inner {
+    top: 31px;
+    left: 909px;
+  }
+  .inner {
+    top: 0;
+    left: 0;
+    border-radius: var(--br-smi);
+    background-color: var(--color-white);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 315px;
+    height: 33px;
+  }
+  .louze324gmailcom {
+    position: absolute;
+    top: 0;
+    left: 9px;
+    display: inline-block;
+    width: 302px;
+    height: 26px;
+  }
+  .b,
+  .div7 {
+    position: absolute;
+  }
+  .div7 {
+    top: 31px;
+    left: 1505px;
+    width: 315px;
+    height: 33px;
+    font-size: 26px;
+  }
+  .b {
+    top: 164px;
+    left: 567px;
+    font-size: var(--font-size-45xl);
+    display: inline-block;
+    text-align: center;
+    width: 786px;
+    height: 98px;
+  }
+  .span {
+    font-weight: 500;
+  }
+  .b1 {
+    color: var(--color-darkslategray);
+  }
+  .span1 {
+    font-family: var(--font-asket-extended);
+  }
+  .div8,
+  .div9 {
+    font-size: var(--font-size-17xl);
+    display: inline-block;
+    color: var(--color-darkorchid);
+  }
+  .div8 {
+    position: absolute;
+    top: 319px;
+    left: 98px;
+    width: 882px;
+  }
+  .div9 {
+    top: 604px;
+    left: 100px;
+    width: 880px;
+  }
+  .div10,
+  .div9,
+  .icon1 {
+    position: absolute;
+  }
+  .div10 {
+    top: 910px;
+    left: 100px;
+    font-size: var(--font-size-17xl);
+    display: inline-block;
+    width: 880px;
+    color: var(--color-darkorchid);
+  }
+  .icon1 {
+    top: 139px;
+    left: 893px;
+    width: 1143px;
+    height: 1143px;
+    object-fit: contain;
+  }
+  .group-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-smi);
+    background-color: var(--color-darkorchid);
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 840px;
+    height: 100px;
+  }
+  .div11 {
+    position: absolute;
+    top: 5px;
+    left: 289px;
+    font-size: var(--font-size-45xl);
+    letter-spacing: -0.06em;
+    font-weight: 500;
+    font-family: var(--font-asket-extended);
+    color: var(--color-white);
+    text-align: center;
+    display: inline-block;
+    width: 261px;
+    height: 97px;
+  }
+  .rectangle-parent {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 1391px;
+    left: 100px;
+    width: 840px;
+    height: 102px;
+  }
+  .group-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-smi);
+    background-color: var(--color-darkorchid);
+    width: 840px;
+    height: 100px;
+  }
+  .div12 {
+    position: absolute;
+    top: 3px;
+    left: 247px;
+    font-size: var(--font-size-45xl);
+    letter-spacing: -0.06em;
+    font-weight: 500;
+    font-family: var(--font-asket-extended);
+    color: var(--color-white);
+    text-align: center;
+    display: inline-block;
+    width: 346px;
+    height: 97px;
+  }
+  .rectangle-group {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 1586px;
+    left: 100px;
+    width: 840px;
+    height: 100px;
+  }
+  .div13 {
+    position: absolute;
+    top: 1px;
+    left: 167px;
+    font-size: var(--font-size-45xl);
+    letter-spacing: -0.06em;
+    font-weight: 500;
+    font-family: var(--font-asket-extended);
+    color: var(--color-white);
+    text-align: center;
+    display: inline-block;
+    width: 505px;
+    height: 97px;
+  }
+  .rectangle-container {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 1779px;
+    left: 100px;
+    width: 840px;
+    height: 100px;
+  }
+  .div14 {
+    position: absolute;
+    top: 7px;
+    left: 47px;
+    font-size: var(--font-size-45xl);
+    letter-spacing: -0.06em;
+    font-weight: 500;
+    font-family: var(--font-asket-extended);
+    color: var(--color-white);
+    text-align: center;
+    display: inline-block;
+    width: 746px;
+    height: 86px;
+  }
+  .group-button {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 1972px;
+    left: 100px;
+    width: 840px;
+    height: 100px;
+  }
+  .bg-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 1920px;
+    overflow: hidden;
+  }
+  .bg-parent,
+  .div,
+  .div1 {
+    height: 2400px;
+  }
+  .div1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+  }
+  .div {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-darkslategray);
+    font-family: var(--font-asket-extended);
+  }

@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-asket-extended: "Asket Extended";
+  
+    /* font sizes */
+    --font-size-5xl: 24px;
+    --font-size-10xl: 29px;
+    --font-size-17xl: 36px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-darkslategray: #3f3f3f;
+    --color-darkorchid: #b964ff;
+  }
+  
+
+.bg,
+.bg-child {
+  position: absolute;
+  width: 1597px;
+  height: 998px;
+}
+.bg-child {
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+}
+.bg {
+  top: -88px;
+  left: -38px;
+}
+.child {
+  top: 0;
+  background-color: var(--color-darkorchid);
+  height: 93px;
+}
+.child,
+.div1,
+.div2,
+.item {
+  position: absolute;
+  left: 0;
+  width: 1920px;
+}
+.item {
+  top: 2306px;
+  background-color: var(--color-darkorchid);
+  height: 93px;
+}
+.div1,
+.div2 {
+  top: 1px;
+  height: 2399px;
+}
+.div2 {
+  top: 2342px;
+  left: 97px;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  width: 366px;
+  height: 24px;
+}
+.div2,
+.div3,
+.div5 {
+  display: inline-block;
+}
+.div3 {
+  position: absolute;
+  top: 34px;
+  left: 98px;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  width: 366px;
+  height: 38px;
+}
+.div5 {
+  top: 0;
+  left: 0;
+  font-weight: 300;
+  width: 101px;
+  height: 23px;
+}
+.div4,
+.div5,
+.inner {
+  position: absolute;
+}
+.div4 {
+  top: 31px;
+  left: 909px;
+  width: 101px;
+  height: 23px;
+  font-size: var(--font-size-5xl);
+}
+.inner {
+  top: 0;
+  left: 0;
+  border-radius: 13px;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 315px;
+  height: 33px;
+}
+.louze324gmailcom {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  display: inline-block;
+  width: 302px;
+  height: 26px;
+}
+.b,
+.div6 {
+  position: absolute;
+}
+.div6 {
+  top: 31px;
+  left: 1505px;
+  width: 315px;
+  height: 33px;
+  font-size: 26px;
+}
+.b {
+  top: 168px;
+  left: calc(50% - 250px);
+  font-size: 64px;
+  display: inline-block;
+  text-align: center;
+  width: 500px;
+  height: 98px;
+}
+.b1 {
+  font-family: var(--font-asket-extended);
+  color: var(--color-darkorchid);
+}
+.span {
+  line-height: 0%;
+}
+.p {
+  margin: 0;
+}
+.b7,
+.div10,
+.div11,
+.div12,
+.div7,
+.div8,
+.div9 {
+  position: absolute;
+  top: 362px;
+  left: 100px;
+  display: inline-block;
+  width: 1720px;
+  height: 178px;
+}
+.b7,
+.div10,
+.div11,
+.div12,
+.div8,
+.div9 {
+  top: 636px;
+}
+.b7,
+.div10,
+.div11,
+.div12,
+.div9 {
+  top: 910px;
+  height: 237px;
+}
+.b7,
+.div10,
+.div11,
+.div12 {
+  top: 1243px;
+}
+.b7,
+.div11,
+.div12 {
+  top: 1591px;
+  height: 119px;
+}
+.b7,
+.div12 {
+  top: 1872px;
+  left: 101px;
+  width: 1722px;
+  height: 279px;
+}
+.b7 {
+  top: 0;
+  left: 3px;
+  font-size: 32px;
+  line-height: 0%;
+  width: 1720px;
+  height: 60px;
+}
+.div13 {
+  top: 99px;
+  left: 3px;
+  height: 52px;
+}
+.div13,
+.div14,
+.div15,
+.div16 {
+  position: absolute;
+  line-height: 183.02%;
+  display: inline-block;
+  width: 1720px;
+}
+.div14 {
+  top: 191px;
+  left: 0;
+  text-align: right;
+  height: 118px;
+}
+.div15,
+.div16 {
+  top: 309px;
+  left: 3px;
+  height: 105px;
+}
+.div16 {
+  top: 348px;
+  font-size: var(--font-size-5xl);
+  line-height: 0%;
+  display: none;
+  height: 88px;
+}
+.ul {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: 32px;
+}
+.div17,
+.parent {
+  position: absolute;
+}
+.div17 {
+  top: 466px;
+  left: 3px;
+  font-size: var(--font-size-5xl);
+  line-height: 0%;
+  display: inline-block;
+  width: 1720px;
+  height: 44px;
+}
+.parent {
+  top: 1732px;
+  left: 97px;
+  width: 1723px;
+  height: 510px;
+  display: none;
+  font-size: var(--font-size-10xl);
+}
+.bg-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 1920px;
+  height: 2400px;
+  overflow: hidden;
+}
+.div {
+  position: relative;
+  width: 100%;
+  height: 2400px;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--color-darkslategray);
+  font-family: var(--font-asket-extended);
+}

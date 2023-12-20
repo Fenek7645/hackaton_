@@ -1,0 +1,31 @@
+{% extends "main/layout.html" %}
+
+{% block title %}
+    О нас
+{% endblock%}
+{% load static%}
+{% block content %}
+
+{% comment %} {% if user.is_authenticated %}
+    <div class="auth-True">
+        <div class="btns_main_email">
+            <a href="{% url 'profile' %}">{{user.username}}</a>
+
+        </div>
+    </div>
+{% else %}
+<div class="auth">
+    <div class="btns_main_regestration">
+        <a href="{% url 'reg_home'%}">Регистрация</a>
+    </div>
+
+    <div class="btns_main_enter">
+        <a href="{% url 'enterens'%}">Вход</a>
+    </div>
+{% endif %} {% endcomment %}
+
+
+    
+{% endblock %}
+
+{% comment %} Html верстка, обьяснения не требует  {% endcomment %}

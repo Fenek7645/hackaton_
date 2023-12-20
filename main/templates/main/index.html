@@ -1,0 +1,64 @@
+{% extends "main/layout.html" %}
+
+{% block title %}
+    Школа Безопасноти
+{% endblock%}
+
+{% load static%}
+
+{% block content %}
+<div class="features">
+    <img src="{% static 'main/img/man_with_pc.png'%}">
+    <h1>Школа Безопасноти</h1>
+    <p>Школа Безопасности - Стань гуру цифровой безопасности с нашей платформой!</p>
+
+</div>
+<div class="square"></div>
+
+<div class="y_line"></div>
+
+
+<div class="btns_main_about">
+    <a href="{% url 'about'%}">О нас</a>
+</div>
+
+
+
+<div class="btns_main_chavo">
+    <a href="{% url 'chavo'%}">ЧАВО</a>
+</div>
+{% if user.is_authenticated %}
+    <div class="auth-True">
+        <div class="btns_main_email">
+            <a href="{% url 'profile' %}">{{user.username}}</a>
+
+        </div>
+    </div>
+    <div class="btns_main_curs">
+        <a href="{% url 'main_courses' %}">Курс</a>
+    </div>
+    <div class="btns_main">
+        <a href="{% url 'main_courses'%}" class="btn">Начать обучение</a>
+    </div>
+    
+{% else %}
+<div class="auth">
+    <div class="btns_main_regestration">
+        <a href="{% url 'reg_home'%}">Регистрация</a>
+    </div>
+    <div class="btns_main">
+        <a href="{% url 'reg_home'%}" class="btn">Начать обучение</a>
+    </div>
+    
+    <div class="btns_main_enter">
+        <a href="{% url 'enterens'%}">Вход</a>
+    </div>
+
+    <div class="btns_main_curs">
+        <a href="{% url 'reg_home' %}">Курс</a>
+    </div>
+{% endif %}
+
+{% endblock %}
+
+{% comment %} Html верстка, обьяснения не требует  {% endcomment %}

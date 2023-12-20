@@ -1,0 +1,26 @@
+{% extends "main/layout.html" %}
+{% block title %}
+    Вход
+{% endblock%}
+
+{% block content %}
+<div class="regestration">
+    <form action="{% url 'enterens'%}" method="post">
+      {% csrf_token %}
+      <h1>Вход</h1>
+      {{form.username}}
+      <div class="password">
+      {{ form.password}}
+      </div> 
+      
+      <input type="submit" value="Войти" class="submit">
+      
+      <p>Еще не зарегистрированы?</p>
+      <a href="{% url 'reg_home'%}">Зарегистрироваться</a>
+      
+    </form>
+
+</div>
+{% endblock %}
+
+{% comment %} Html верстка, обьяснения не требует  {% endcomment %}

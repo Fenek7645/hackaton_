@@ -1,0 +1,277 @@
+.frame {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.frame .overlap {
+  position: relative;
+}
+
+
+.frame .rectangle {
+  position: absolute;
+  width: 110%;
+  height: 7.5%;
+  background-color: #ffc800;
+}
+
+.frame .div {
+  position: absolute;
+  background-color: #ffc800;
+}
+
+.frame .view {
+  position: absolute;
+  width: 370px;
+  height: 1612px;
+  top: 122px;
+  left: 136px;
+}
+
+.frame .text-wrapper {
+  width: 366px;
+  top: 0;
+  left: 0;
+ 
+  font-weight: 500;
+  color: #3f3f3f;
+  font-size: 24px;
+  letter-spacing: 0;
+  position: absolute;
+  line-height: normal;
+}
+
+.frame .text-wrapper-2 {
+  width: 366px;
+  top: 1574px;
+  left: 0;
+  font-weight: 500;
+  color: #3f3f3f;
+  font-size: 24px;
+  letter-spacing: 0;
+  position: absolute;
+  line-height: normal;
+}
+
+.frame .element {
+  position: absolute;
+  width: 749px;
+  height: 828px;
+  top: 557px;
+  left: 769px;
+  object-fit: cover;
+}
+
+.frame .rectangle-2 {
+  position: absolute;
+  width: 1280px;
+  height: 161px;
+  top: 418px;
+  left: 138px;
+  background-color: #b964ff;
+  border-radius: 13px;
+}
+
+.frame .p {
+  width: 1068px;
+  top: 448px;
+  left: 244px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: -2.52px;
+  position: absolute;
+  line-height: normal;
+}
+
+.frame .group {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 659px;
+  left: 136px;
+}
+
+.frame .overlap-group {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 109px;
+  left: 2px;
+}
+
+.frame .div-2 {
+  width: 692px;
+  top: 351px;
+  left: 0;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  letter-spacing: -1.28px;
+  position: absolute;
+  line-height: normal;
+}
+
+.frame .span {
+  font-weight: 500;
+  color: #000000;
+}
+
+.frame .text-wrapper-3 {
+  font-weight: 700;
+  color: #b964ff;
+}
+
+.frame .text-wrapper-4 {
+  color: #000000;
+}
+
+.frame .div-3 {
+  width: 760px;
+  top: 154px;
+  left: 0;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  letter-spacing: -1.28px;
+  position: absolute;
+  line-height: normal;
+}
+
+.frame .element-2 {
+  width: 703px;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  letter-spacing: -1.28px;
+  position: absolute;
+  line-height: normal;
+}
+
+.frame .div-4 {
+  width: 660px;
+  top: 618px;
+  left: 0;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  letter-spacing: -1.28px;
+  position: absolute;
+  line-height: normal;
+}
+
+.frame .text-wrapper-5 {
+  font-weight: 500;
+  color: #b964ff;
+}
+
+.frame .div-5 {
+  width: 705px;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  letter-spacing: -1.28px;
+  position: absolute;
+  line-height: normal;
+}
+
+.frame .text-wrapper-6 {
+  font-weight: 700;
+  color: #b964ff;
+}
+
+.frame .text-wrapper-7 {
+  font-weight: 500;
+  color: #000000;
+}
+
+.frame .rectangle-3 {
+  position: absolute;
+  width: 523px;
+  height: 254px;
+  top: 1363px;
+  left: 895px;
+  background-color: #b964ff;
+  border-radius: 13px;
+}
+
+.frame .text-wrapper-8 {
+  width: 452px;
+  top: 1418px;
+  left: 939px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: -0.72px;
+  position: absolute;
+  line-height: normal;
+}
+
+.frame .div-wrapper {
+  position: absolute;
+  width: 91px;
+  height: 23px;
+  top: 122px;
+  left: 754px;
+}
+
+.frame .text-wrapper-9 {
+  width: 89px;
+  top: 0;
+  left: 0;
+  font-weight: 300;
+  color: #3f3f3f;
+  font-size: 24px;
+  letter-spacing: 0;
+  white-space: nowrap;
+  position: absolute;
+  line-height: normal;
+}
+
+.frame .overlap-wrapper {
+  position: absolute;
+  width: 317px;
+  height: 33px;
+  top: 119px;
+  left: 1103px;
+}
+
+.frame .overlap-2 {
+  position: relative;
+  width: 315px;
+  height: 33px;
+  background-color: #ffffff;
+  border-radius: 13px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.frame .text-wrapper-10 {
+  position: absolute;
+  width: 302px;
+  top: 0;
+  left: 9px;
+  font-weight: 400;
+  color: #3f3f3f;
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-11 {
+  font-weight: 700;
+  color: #3f3f3f;
+  font-size: 48px;
+  letter-spacing: 0;
+  position: absolute;
+  line-height: normal;
+}
+
+  
+  
