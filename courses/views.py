@@ -10,9 +10,14 @@ def courses(requset):
 
 # Курс про пароль
 @login_required(login_url='')
-def password_courses(requset):
-    return render(requset, 'courses/password.html')
+def personal_data(requset):
+    return render(requset, 'courses/personal_data.html')
 
+
+# Теория переходы
+@login_required(login_url='')
+def theory(requset):
+    return render(requset, 'courses/theory.html')
 
 
 

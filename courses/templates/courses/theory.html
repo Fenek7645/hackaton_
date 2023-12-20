@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Теория</title>
+    <link rel="stylesheet" href="{% static 'courses/css/theory.css' %}" />
+  </head>
+
+    <body>
+      <div class="div">
+        <div class="bg-parent">
+          <div class="bg">
+            <div class="bg-child"></div>
+          </div>
+          <div class="frame-child"></div>
+          <div class="div1">ШКОЛА БЕЗОПАСНОСТИ</div>
+          <div class="div2">
+            <div class="div3">Теория</div>
+          </div>
+          <button class="button">
+            <a href="{% url 'profile' %}">
+              <div class="child"></div>
+              <div class="louze324gmailcom">{{user.username}}</div>
+            </a>
+          </button>
+          <b class="b">Теоретический материал</b>
+          <button class="rectangle-parent">
+            <a href="{% url 'personal_data' %}">
+              <div class="group-child"></div>
+              <div class="div4">Защита личных данных</div>
+            </a>
+          </button>
+          <button class="rectangle-group">
+            <a href="{% url 'mosheniki_main' %}">
+            <div class="group-child"></div>
+            <div class="div5">Виды мошенничества</div>
+            <a>
+          </button>
+          <button class="rectangle-container">
+            <div class="group-child"></div>
+            <div class="div5">
+              <ul class="ul">
+                <li>Помощь при</li>
+              </ul>
+            </div>
+          </button>
+        </div>
+      </div>
+    </body>
+  </html>
+  

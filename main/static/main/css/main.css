@@ -87,7 +87,7 @@ main .btns_main a{
     color: #FFF;
     background: #B964FF;
     position: absolute;
-    bottom: 159px;
+    bottom: 140px;
     left: 134px;
     width: 543px;
     height: 104px;
@@ -97,7 +97,8 @@ main .btns_main a{
     z-index: 2;
     text-align: center;
 }
-
+main .btns_main a:hover{ background-color: #B964FF;}
+main .btns_main a:hover{ background-color: #B964FF;}
 
 main .btns_main_about a{
     width: 95px;
