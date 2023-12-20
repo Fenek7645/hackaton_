@@ -6,9 +6,9 @@
 {% endblock%}
 
 {% block content %}
-    <form method="post">
-        <h1>{{user.username}}</h1>
-        {% csrf_token %}
-        <p><a href="{% url 'logout' %}">Log Out</a></p>
-    </form>
+<form method="post" action="{% url 'logout' %}">
+    <h1>{{ user.username }}</h1>
+    {% csrf_token %}
+    <button type="submit">Выйти</button>
+</form>
 {% endblock %}

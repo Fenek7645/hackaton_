@@ -196,7 +196,11 @@ body {
     box-sizing: border-box;
     width: 840px;
     height: 100px;
+    transition: 0.2s;
   }
+
+  .group-child:hover{background-color: #653e86;}
+
   .div11 {
     position: absolute;
     top: 5px;
@@ -222,15 +226,7 @@ body {
     width: 840px;
     height: 102px;
   }
-  .group-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: var(--br-smi);
-    background-color: var(--color-darkorchid);
-    width: 840px;
-    height: 100px;
-  }
+
   .div12 {
     position: absolute;
     top: 3px;
