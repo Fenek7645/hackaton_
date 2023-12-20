@@ -126,6 +126,7 @@ body {
   background-color: var(--color-tomato);
   width: 381px;
   height: 68px;
+  transition: 0.2s;
 }
 .b1 {
   top: 7px;
@@ -153,7 +154,8 @@ body {
   height: 68px;
 }
 
-
+.button1 .item:hover{background-color: #b4351f;}
+.button1 .item:active{background-color: #e95035;}
 .frame-item {
   top: 235px;
   border-radius: var(--br-smi);
