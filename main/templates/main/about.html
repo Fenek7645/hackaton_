@@ -1,31 +1,147 @@
-{% extends "main/layout.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html>
 
-{% block title %}
-    О нас
-{% endblock%}
-{% load static%}
-{% block content %}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Теория</title>
+    <link rel="stylesheet" href="{% static 'main/css/about.css' %}" />
+  </head>
 
-{% comment %} {% if user.is_authenticated %}
-    <div class="auth-True">
-        <div class="btns_main_email">
-            <a href="{% url 'profile' %}">{{user.username}}</a>
 
+
+  <body>
+    <div class="div">
+      <div class="inner">
+        <div class="inner">
+          <div class="rectangle-parent">
+            <div class="frame-child"></div>
+            <div class="frame-item"></div>
+            <img class="icon" alt="" src={% static 'main/img/man_about.png' %} />
+
+            <div class="info-main">
+              <div class="info-main-child"></div>
+              <div class="wrapper">
+                <div class="div1">
+                  Этот портал предназначен для обучения пользователей и
+                  предупреждения мошенничества в интернете.
+                </div>
+              </div>
+            </div>
+            <div class="parent">
+              <div class="div2">
+                <p class="blank-line">&nbsp;</p>
+                <ul class="ul">
+                  <li>
+                    <b class="b">Наша цель</b>
+                    <span>
+                      <span class="span"> - </span>
+                      <span
+                        >предоставить полноценный обучающий опыт, который
+                        поможет учащимся освоить основы данной темы и улучшить
+                        свои знания.</span
+                      >
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="div3">
+                <p class="blank-line">&nbsp;</p>
+                <ul class="ul">
+                  <li>
+                    <b class="b">Наш курс</b>
+                    <span>
+                      <span class="span"> </span>
+                      <span
+                        >разработан таким образом, чтобы учащиеся могли
+                        протестировать и углубить свои знания в каждом из этих
+                        блоков.</span
+                      >
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="div4">
+                <p class="blank-line">&nbsp;</p>
+                <ul class="ul">
+                  <li class="li">
+                    <b class="b">Он состоит из 20 вопросов,</b>
+                    <span>
+                      <span class="span"> </span>
+                      <span>которые покрывают 4 основных блока теории.</span>
+                      <span class="span"> </span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="div5">
+                <ul class="ul">
+                  <li>
+                    <b class="b">Наш обучающий курс</b>
+                    <span>
+                      <span class="span"> </span>
+                      <span
+                        >предоставляет актуальную информацию в форме
+                        теста.</span
+                      >
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="div6">
+                <p class="blank-line">&nbsp;</p>
+                <ul class="ul">
+                  <li>
+                    <span class="span5">
+                      <b class="b4">Каждый вопрос</b>
+                      <span class="span"> </span>
+                    </span>
+                    <span
+                      >имеет несколько вариантов ответов, из которых учащиеся
+                      выбирают правильный.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="result">
+              <div class="result-child"></div>
+              <div class="div7">
+                По результатам теста, пользователю на электронную почту будет
+                выслан сертификат, подтверждающий прохождение курса.
+              </div>
+            </div>
+            <div class="info">
+              <div class="div8">
+                <div class="div9">О нас</div>
+              </div>
+              {% if user.is_authenticated %}
+                <button class="button">
+                    <a href="{% url 'profile' %}">
+                    <div class="child"></div>
+                    <div class="louze324gmailcom">{{user.username}}</div>
+                    </a>
+                </button>
+              {% else %}
+                <button class="btns_main_regestration">
+                    <a href="{% url 'reg_home'%}">Регистрация</a>
+                </button>
+            
+                <button class="btns_main_enter">
+                    <a href="{% url 'enterens'%}">Вход</a>
+                </button>
+              {% endif %}
+              <div class="div10">
+                <div class="div11">ШКОЛА БЕЗОПАСНОСТИ</div>
+                <div class="div12">ШКОЛА БЕЗОПАСНОСТИ</div>
+              </div>
+            </div>
+            <b class="b5">ЧТО ТАКОЕ ШКОЛА БЕЗОПАСНОСТИ?</b>
+          </div>
         </div>
+      </div>
     </div>
-{% else %}
-<div class="auth">
-    <div class="btns_main_regestration">
-        <a href="{% url 'reg_home'%}">Регистрация</a>
-    </div>
-
-    <div class="btns_main_enter">
-        <a href="{% url 'enterens'%}">Вход</a>
-    </div>
-{% endif %} {% endcomment %}
-
-
-    
-{% endblock %}
-
+  </body>
+</html>
 {% comment %} Html верстка, обьяснения не требует  {% endcomment %}

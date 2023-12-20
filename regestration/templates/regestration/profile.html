@@ -1,14 +1,64 @@
-{% extends "main/layout.html" %}
 {% load static %}
 
-{% block title %}
-    Профиль
-{% endblock%}
 
-{% block content %}
-<form method="post" action="{% url 'logout' %}">
-    <h1>{{ user.username }}</h1>
-    {% csrf_token %}
-    <button type="submit">Выйти</button>
-</form>
-{% endblock %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>О социальной инженерии</title>
+    <link rel="stylesheet" href="{% static 'regestration/css/profile.css' %}" />
+  </head>
+  <body>
+    <div class="bg-parent">
+      <div class="bg">
+        <div class="bg-child"></div>
+      </div>
+      <div class="frame-child"></div>
+      <div class="div">ШКОЛА БЕЗОПАСНОСТИ</div>
+      <div class="div1">
+        <div class="div2">Личный кабинет</div>
+      </div>
+      <button class="button">
+        <div class="child"></div>
+        <div class="louze324gmailcom">{{user.username}}</div>
+      </button>
+      <div class="div3">
+        <button class="change-pass">
+          <div class="change-pass-child"></div>
+          <button class="change-pass1">
+            <div class="change-pass-item"></div>
+            <div class="div4">Сменить пароль</div>
+          </button>
+          <div class="logout">
+            <form method="post" action="{% url 'logout' %}">
+                {% csrf_token %}
+                <button type="submit">Выйти из аккаунта</button>
+            </form>
+        </div>
+        </button>
+        <div class="ava">
+          <div class="ava-child"></div>
+          <div class="l">L</div>
+        </div>
+        <div class="item"></div>
+      </div>
+      <button class="button1">
+        <a href="{% url 'theory' %}">
+        <div class="inner"></div>
+        <b class="b">Теория</b>
+        </a>
+      </button>
+      <button class="button2">
+        <a href="{% url 'main_courses' %}">
+        <div class="rectangle-div"></div>
+        <b class="b1">Курс</b>
+        </a>
+      </button>
+      <button class="button3">
+        <div class="child1"></div>
+        <b class="b2">Сертификат</b>
+      </button>
+    </div>
+  </body>
+</html>
