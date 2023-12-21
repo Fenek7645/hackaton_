@@ -19,6 +19,11 @@ def personal_data(requset):
 def helpa(requset):
     return render(requset, 'courses/helpa.html')
 
+# О том как создавать пароли
+@login_required(login_url='')
+def password(requset):
+    return render(requset, 'courses/password.html')
+
 
 #-----------------МОШЕННИКИ--------------------#
 
@@ -76,3 +81,5 @@ def rule_web(requset):
 @login_required(login_url='')
 def rule_social_network(requset):
     return render(requset, 'courses/defe_data/rule_social_network.html')
+
+#----------Защита-личных-данных-конец----------------#

@@ -2,11 +2,13 @@ from django.shortcuts import render, HttpResponseRedirect
 
 from django.contrib.auth.decorators import login_required
 
-from django.contrib.auth import logout
+from django.contrib.messages.views import SuccessMessageMixin
 
-from regestration.models import User
+from django.contrib.auth.views import PasswordChangeView
 
-from regestration.forms import UserLoginForm, UserRegistrationForm, UserProfileForm
+from django.urls import reverse_lazy
+
+from regestration.forms import UserLoginForm, UserRegistrationForm, UserProfileForm, UserPasswordChangeForm
 
 from django.contrib import auth
 # Создаём функции для вывода html страницы
@@ -45,3 +47,21 @@ def profile(requset):
     form = UserProfileForm(instance=requset.user)
     context = {'form': form}
     return render(requset, 'regestration/profile.html')
+
+
+
+class UserPasswordChangeView(SuccessMessageMixin, PasswordChangeView):
+    """
+    Изменение пароля пользователя
+    """
+    form_class = UserPasswordChangeForm
+    template_name = 'system/user_password_change.html'
+    success_message = 'Ваш пароль был успешно изменён!'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Изменение пароля на сайте'
+        return context
+
+    def get_success_url(self):
+        return reverse_lazy('profile_detail', kwargs={'slug': self.request.user.profile.slug})

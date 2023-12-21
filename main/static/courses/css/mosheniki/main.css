@@ -95,13 +95,13 @@ body {
   .div6 {
     top: 0;
     left: 0;
-    font-weight: 300;
+    font-weight: 500;
     display: inline-block;
   }
   .div5,
   .inner {
-    top: 31px;
-    left: 909px;
+    top: 34px;
+    left: 920px;
   }
   .inner {
     top: 0;

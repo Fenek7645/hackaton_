@@ -8,6 +8,7 @@ urlpatterns = [
     path('personal_data/suppourt', views.helpa, name="helpa"),
     path('personal_data/data_rules', views.rule_data, name="rule_data"),
     path('personal_data/web_rules', views.rule_web, name="rule_web"),
+    path('personal_data/web_rules/password', views.password, name="password"),
     path('personal_data/social_network', views.rule_social_network, name="rule_social_network"),
     path('theory/', views.theory, name="theory"),
     path('scammers/', views.mosheniki, name="mosheniki_main"),

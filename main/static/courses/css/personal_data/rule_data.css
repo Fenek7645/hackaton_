@@ -80,7 +80,7 @@ body {
 .div5 {
   top: 0;
   left: 0;
-  font-weight: 300;
+  font-weight: 500;
   width: 101px;
   height: 23px;
 }
@@ -91,7 +91,7 @@ body {
 }
 .div4 {
   top: 34px;
-  left: 909px;
+  left: 920px;
   width: 101px;
   height: 23px;
   font-size: var(--font-size-5xl);

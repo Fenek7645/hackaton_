@@ -64,13 +64,13 @@ body {
 .div3 {
   top: 0;
   left: 0;
-  font-weight: 300;
+  font-weight: 500;
   display: inline-block;
 }
 .child,
 .div2 {
   top: 34px;
-  left: 910px;
+  left: 920px;
 }
 .child {
   top: 0;

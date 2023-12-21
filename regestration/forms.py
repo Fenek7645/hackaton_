@@ -1,5 +1,5 @@
 from django import forms
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm, SetPasswordForm
 
 from regestration.models import User
 
@@ -69,3 +69,20 @@ class UserProfileForm(UserChangeForm):
     class Meta:
         model = User
         fields = ("email", "image", "username")
+        
+        
+        
+class UserPasswordChangeForm(SetPasswordForm):
+    """
+    Форма изменения пароля
+    """
+    def __init__(self, *args, **kwargs):
+        """
+        Обновление стилей формы
+        """
+        super().__init__(*args, **kwargs)
+        for field in self.fields:
+            self.fields[field].widget.attrs.update({
+                'class': 'form-control',
+                'autocomplete': 'off'
+            })
