@@ -20,6 +20,11 @@ def theory(requset):
     return render(requset, 'courses/theory.html')
 
 
+# О том что делать если поался на удочку мошенников 
+@login_required(login_url='')
+def helpa(requset):
+    return render(requset, 'courses/helpa.html')
+
 
 #-----------------МОШЕННИКИ--------------------#
 
