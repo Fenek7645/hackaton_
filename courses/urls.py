@@ -7,6 +7,7 @@ urlpatterns = [
     path('personal_data/', views.personal_data, name="personal_data"),
     path('personal_data/suppourt', views.helpa, name="helpa"),
     path('personal_data/data_rules', views.rule_data, name="rule_data"),
+    path('personal_data/web_rules', views.rule_web, name="rule_web"),
     path('theory/', views.theory, name="theory"),
     path('scammers/', views.mosheniki, name="mosheniki_main"),
     path('scammers/viruses', views.mosheniki_viruses, name="mosheniki_viruses"),

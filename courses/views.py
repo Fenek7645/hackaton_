@@ -67,5 +67,8 @@ def rule_data(requset):
     return render(requset, 'courses/defe_data/rule_data.html')
 
 
-
+# Правила поведения в веб приложениях, сервисах
+@login_required(login_url='')
+def rule_web(requset):
+    return render(requset, 'courses/defe_data/rule_web.html')
 
