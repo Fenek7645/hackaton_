@@ -14,12 +14,6 @@ def personal_data(requset):
     return render(requset, 'courses/personal_data.html')
 
 
-# Теория переходы
-@login_required(login_url='')
-def theory(requset):
-    return render(requset, 'courses/theory.html')
-
-
 # О том что делать если поался на удочку мошенников 
 @login_required(login_url='')
 def helpa(requset):
@@ -58,3 +52,20 @@ def mosheniki_coshial_ingeering(requset):
     return render(requset, 'courses/mosheniki/coshial_ingeering.html')
 
 #-----------------МОШЕННИКИ-КОНЕЦ--------------------#
+
+
+
+#---------------Защита-личных-данных-----------------#
+# Теория переходы
+@login_required(login_url='')
+def theory(requset):
+    return render(requset, 'courses/theory.html')
+
+# Правила хранения личных данных
+@login_required(login_url='')
+def rule_data(requset):
+    return render(requset, 'courses/defe_data/rule_data.html')
+
+
+
+

@@ -6,7 +6,4 @@ def index(request):
     return render(request, 'main/index.html')
 
 def about(request):
-    return render(request, 'main/about.html')
-
-def chavo(requset):
-    return render(requset, 'main/CHAVO.html')
+    return render(request, 'main/about.html') 

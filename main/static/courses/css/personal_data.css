@@ -5,28 +5,23 @@ body {
   
   :root {
     /* fonts */
-    --font-asket-extended:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-asket-extended: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
     /* font sizes */
     --font-size-45xl: 64px;
-    --font-size-13xl: 32px;
-    --font-size-21xl: 40px;
+    --font-size-37xl: 56px;
     --font-size-5xl: 24px;
   
     /* Colors */
     --color-white: #fff;
+    --color-deepskyblue: #20a6df;
     --color-darkorchid: #b964ff;
     --color-darkslategray: #3f3f3f;
-  
-    /* Paddings */
-    --padding-24xl: 43px;
   
     /* Border radiuses */
     --br-smi: 13px;
   }
   
-
-
 
 
 .bg,
@@ -50,10 +45,9 @@ body {
   height: 93px;
 }
 .child,
-.div1,
-.div2,
-.div3,
-.item {
+.div,
+.item,
+.shield-1-icon {
   position: absolute;
   left: 0;
   width: 1920px;
@@ -63,14 +57,21 @@ body {
   background-color: var(--color-darkorchid);
   height: 93px;
 }
-.div1,
-.div2,
-.div3 {
+.div,
+.shield-1-icon {
   top: 1px;
   height: 2399px;
 }
-.div2,
-.div3 {
+.shield-1-icon {
+  top: 209px;
+  left: 1126px;
+  width: 758px;
+  height: 758px;
+  object-fit: cover;
+}
+.div1,
+.div2 {
+  position: absolute;
   top: 2342px;
   left: 97px;
   font-weight: 500;
@@ -78,28 +79,28 @@ body {
   width: 366px;
   height: 24px;
 }
-.div3 {
+.div2 {
   top: 34px;
   left: 98px;
   height: 38px;
 }
+.div3,
 .div4,
-.div5,
 .inner {
   position: absolute;
   width: 101px;
   height: 23px;
 }
-.div5 {
+.div4 {
   top: 0;
   left: 0;
-  font-weight: 300;
+  font-weight: 500px;
   display: inline-block;
 }
-.div4,
+.div3,
 .inner {
   top: 34px;
-  left: 929px;
+  left: 909px;
 }
 .inner {
   top: 0;
@@ -137,137 +138,139 @@ body {
   height: 33px;
 }
 .b {
-  top: 185px;
-  left: 462px;
-  font-size: 80px;
+  top: 183px;
+  left: 98px;
+  font-size: var(--font-size-37xl);
   display: inline-block;
   text-align: center;
-  width: 1035px;
-  height: 98px;
-}
-.span {
-  font-weight: 500;
-}
-.span1 {
-  color: var(--color-darkslategray);
-}
-.div6 {
-  position: absolute;
-  top: 372px;
-  left: 102px;
-  font-size: var(--font-size-21xl);
-  display: inline-block;
-  width: 878px;
-  height: 353px;
-  color: var(--color-darkorchid);
-}
-.blank-line {
-  margin: 0;
-}
-.span2 {
-  font-weight: 500;
-  font-family: var(--font-asket-extended);
-  color: var(--color-darkorchid);
-}
-.div7 {
-  top: 693px;
-  left: 978px;
-  font-size: var(--font-size-21xl);
-  text-align: right;
-  display: inline-block;
-  
-  width: 840px;
-  height: 574px;
-}
-.div7,
-.div8,
-.div9 {
-  position: absolute;
-}
-.div8 {
-  top: 1199px;
-  left: 103px;
-  font-size: var(--font-size-21xl);
-  display: inline-block;
-  width: 882px;
-  height: 413px;
-}
-.div9 {
-  top: 1723px;
-  left: 95px;
-  font-size: var(--font-size-45xl);
-  font-weight: 500;
-}
-.ul {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  padding-left: var(--padding-24xl);
-}
-.div10,
-.div11,
-.div12 {
-  position: absolute;
-  top: 1863px;
-  left: 82px;
-  font-size: var(--font-size-13xl);
-  display: inline-block;
-  width: 762px;
-}
-.div11,
-.div12 {
-  top: 1950px;
-  width: 771px;
-}
-.div12 {
-  top: 2037px;
-  height: 105px;
-}
-.frame-child {
-  position: absolute;
-  top: 1723px;
-  left: 1100px;
-  border-radius: var(--br-smi);
-  background-color: var(--color-darkorchid);
-  width: 718px;
-  height: 522px;
-}
-.div13,
-.div14 {
-  position: absolute;
-  color: var(--color-white);
-  text-align: center;
-  display: inline-block;
-}
-.div13 {
-  top: 1833px;
-  left: 1102px;
-  font-size: var(--font-size-45xl);
-  font-weight: 500;
-  width: 718px;
+  width: 1722px;
   height: 72px;
 }
-.div14 {
-  top: 1932px;
-  left: 1173px;
-  font-size: 36px;
-  width: 576px;
-  height: 158px;
+.span {
+  color: var(--color-darkslategray);
 }
-.bg-parent {
+.div5 {
+  position: absolute;
+  top: 365px;
+  left: 98px;
+  font-size: 48px;
+  display: inline-block;
+  width: 842px;
+  height: 213px;
+  color: var(--color-deepskyblue);
+}
+.rectangle-div {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: var(--br-smi);
+  background-color: var(--color-deepskyblue);
+  width: 880px;
+  height: 340px;
+}
+.div7 {
+  position: absolute;
+  top: 78.29px;
+  left: 89.05px;
+  font-size: var(--font-size-45xl);
+  letter-spacing: -0.06em;
+  font-weight: 500;
+  font-family: var(--font-asket-extended);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  width: 701.9px;
+  height: 161.05px;
+}
+.button1,
+.child1 {
+  top: 0;
+  width: 880px;
+  height: 340px;
+}
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+}
+.child1 {
+  left: 9.24px;
+  border-radius: var(--br-smi);
+  background-color: var(--color-darkorchid);
+}
+.button2,
+.child1,
+.div8 {
+  position: absolute;
+}
+.div8 {
+  top: 77.17px;
+  left: 0;
+  font-size: var(--font-size-37xl);
+  letter-spacing: -0.06em;
+  font-weight: 500;
+  font-family: var(--font-asket-extended);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  width: 880px;
+  height: 205.79px;
+}
+.button2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 488px;
+  left: 831px;
+  width: 889.24px;
+  height: 340px;
+}
+.div9 {
+  top: 88.36px;
+  left: 71.24px;
+  font-size: var(--font-size-45xl);
+  letter-spacing: -0.06em;
+  line-height: 74px;
+  font-weight: 500;
+  font-family: var(--font-asket-extended);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  width: 736.48px;
+  height: 163.29px;
+}
+.button3,
+.div6,
+.div9 {
+  position: absolute;
+}
+.button3 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 975px;
+  left: 0;
+  width: 880px;
+  height: 340px;
+}
+.div6 {
+  top: 860px;
+  left: 100px;
+  width: 1720.24px;
+  height: 1315px;
+}
+.bg-parent {
+  position: relative;
   background-color: var(--color-white);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   width: 100%;
   height: 2400px;
   overflow: hidden;
-}
-.div {
-  position: relative;
-  width: 100%;
-  height: 2400px;
   text-align: left;
   font-size: var(--font-size-5xl);
   color: var(--color-darkslategray);
