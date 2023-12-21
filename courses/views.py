@@ -72,3 +72,7 @@ def rule_data(requset):
 def rule_web(requset):
     return render(requset, 'courses/defe_data/rule_web.html')
 
+
+@login_required(login_url='')
+def rule_social_network(requset):
+    return render(requset, 'courses/defe_data/rule_social_network.html')
