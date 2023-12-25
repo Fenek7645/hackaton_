@@ -1,27 +1,25 @@
 body {
-    margin: 0;
-    line-height: normal;
-    width: 100%;
-  }
-  
-  :root {
-    /* fonts */
-    --font-asket-extended: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
-    /* font sizes */
-    --font-size-21xl: 40px;
-    --font-size-5xl: 24px;
-  
-    /* Colors */
-    --color-white: #fff;
-    --color-tomato: #e95035;
-    --color-darkslategray: #3f3f3f;
-  
-    /* Border radiuses */
-    --br-smi: 13px;
-  }
+  margin: 0;
+  line-height: normal;
+}
 
+:root {
+  /* fonts */
+  --font-asket-extended: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+  /* font sizes */
+  --font-size-29xl: 48px;
+  --font-size-21xl: 40px;
+  --font-size-5xl: 24px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-tomato: #e95035;
+  --color-darkslategray: #3f3f3f;
+
+  /* Border radiuses */
+  --br-smi: 13px;
+}
 .bg,
 .bg-child,
 .frame-child {
@@ -40,10 +38,10 @@ body {
   left: -38px;
 }
 .frame-child {
-  top: 0px;
+  top: 1px;
   left: 0;
   background-color: #ffc800;
-  width: 100%;
+  width: 1920px;
   height: 93px;
 }
 .div1 {
@@ -59,7 +57,7 @@ body {
 .div2,
 .div3 {
   position: absolute;
-  width: 67px;
+  width: 60px;
   height: 23px;
 }
 .div3 {
@@ -70,9 +68,8 @@ body {
 }
 .child,
 .div2 {
-  top: 34px;
+  top: 30px;
   left: 930px;
-  font-style: normal;
 }
 .child {
   top: 0;
@@ -102,89 +99,136 @@ body {
   background-color: transparent;
   position: absolute;
   top: 31px;
-  left: 1504px;
+  left: 1505px;
   width: 315px;
   height: 33px;
 }
+.span1 {
+  color: var(--color-tomato);
+}
+.span2 {
+  color: #b964ff;
+}
 .b {
-  top: 148px;
-  left: 412px;
+  font-family: var(--font-asket-extended);
+}
+.span3 {
+  font-weight: 500;
+}
+.span {
+  line-height: 0%;
+}
+.div4 {
+  position: absolute;
+  top: 174px;
+  left: 98px;
+  font-size: var(--font-size-29xl);
+  display: inline-block;
+  width: 842px;
+  height: 188px;
+}
+.span5 {
+  font-weight: 500;
+  font-family: var(--font-asket-extended);
+  color: var(--color-tomato);
+}
+.div5 {
+  position: absolute;
+  top: 369px;
+  left: 98px;
   font-size: var(--font-size-21xl);
   display: inline-block;
-  text-align: center;
-  width: 1056px;
+  width: 842px;
+  height: 188px;
 }
-.b,
-.b1,
-.item {
+.span7 {
+  color: var(--color-darkslategray);
+}
+.div6 {
   position: absolute;
+  top: 557px;
+  left: 98px;
+  font-size: var(--font-size-21xl);
+  line-height: 111.24%;
+  display: inline-block;
+  width: 842px;
+  height: 147px;
+  color: var(--color-tomato);
 }
 .item {
   top: 0;
   left: 0;
   border-radius: var(--br-smi);
   background-color: var(--color-tomato);
-  width: 381px;
-  height: 68px;
-  transition: 0.2s;
+  width: 586px;
+  height: 79.6px;
 }
-.b1 {
-  top: 7px;
-  left: 120px;
-  font-size: var(--font-size-21xl);
-  display: inline-block;
+.button1,
+.div7,
+.item {
+  position: absolute;
+}
+.div7 {
+  top: 7.37px;
+  left: 201px;
+  font-size: var(--font-size-29xl);
+  font-weight: 500;
   font-family: var(--font-asket-extended);
   color: var(--color-white);
   text-align: left;
-  width: 162px;
-  height: 53px;
-}
-.button1,
-.frame-item {
-  position: absolute;
-  left: 760px;
-  width: 381px;
+  display: inline-block;
+  width: 184px;
+  height: 63px;
 }
 .button1 {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 668px;
-  height: 68px;
+  top: 667.63px;
+  left: 1234px;
+  width: 586px;
+  height: 79.6px;
 }
-
-.button1 .item:hover{background-color: #b4351f;}
-.button1 .item:active{background-color: #e95035;}
-.frame-item {
-  top: 235px;
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 81.41px;
   border-radius: var(--br-smi);
   background-color: var(--color-darkslategray);
-  height: 381px;
+  width: 585.95px;
+  height: 498.4px;
 }
-.frame-inner {
+.group-item {
   position: absolute;
-  top: 269px;
-  left: 793px;
+  top: 59.72px;
+  left: 179.96px;
   border-radius: 50%;
   background-color: var(--color-tomato);
-  width: 314px;
-  height: 314px;
+  width: 387.78px;
+  height: 393.07px;
 }
 .icon {
   position: absolute;
-  top: 179px;
-  left: 719px;
-  width: 464px;
-  height: 464px;
+  top: 36.92px;
+  left: 0;
+  width: 748.78px;
+  height: 415.88px;
   object-fit: cover;
 }
-.bg-parent {
+.bg-parent,
+.rectangle-parent {
   position: absolute;
+  top: 133px;
+  left: 1152.22px;
+  width: 748.78px;
+  height: 498.4px;
+}
+.bg-parent {
   top: 0;
   left: 0;
   background-color: var(--color-white);
-  width: 100%;
+  width: 1920px;
   height: 800px;
   overflow: hidden;
 }

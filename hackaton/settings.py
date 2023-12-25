@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'main',
     'regestration',
     'courses',
+    'game',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

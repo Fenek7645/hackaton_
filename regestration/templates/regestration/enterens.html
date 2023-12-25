@@ -1,26 +1,55 @@
-{% extends "main/layout.html" %}
-{% block title %}
-    Вход
-{% endblock%}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'regestration/css/enterens.css' %}">
+</head>
+  <body>
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-6">
+                  <div class="login-container">
+                      <h2 class="login-title">Вход</h2>
+                      {% if form.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert" id="errorAlert">
+                            <strong>Ошибка!</strong> Пожалуйста, проверьте введенные данные.
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                      {% endif %}
+                      <form method="post">
+                          {% csrf_token %}
+                          <div class="form-group">
+                              <input type="text" class="username-control" name="username" placeholder="Имя пользователя" required>
+                          </div>
+                          <div class="form-group">
+                              <input type="password" class="password-control" name="password" placeholder="Пароль" required>
+                          </div>
+                          <button type="submit" class="btn btn-login">Войти</button>
+                          <div class="form-footer">
+                              <a href="{% url 'reg_home' %}">Зарегестрироваться</a>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+  </html>
 
-{% block content %}
-<div class="regestration">
-    <form action="{% url 'enterens'%}" method="post">
-      {% csrf_token %}
-      <h1>Вход</h1>
-      {{form.username}}
-      <div class="password">
-      {{ form.password}}
-      </div> 
-      
-      <input type="submit" value="Войти" class="submit">
-      
-      <p>Еще не зарегистрированы?</p>
-      <a href="{% url 'reg_home'%}">Зарегистрироваться</a>
-      
-    </form>
 
-</div>
-{% endblock %}
-
-{% comment %} Html верстка, обьяснения не требует  {% endcomment %}
+  <script>
+    // JavaScript для закрытия сообщения об ошибке при нажатии на крестик
+    document.addEventListener('DOMContentLoaded', function() {
+        var alert = document.getElementById('errorAlert');
+        var closeButton = alert.querySelector('.close');
+    
+        closeButton.addEventListener('click', function() {
+            alert.style.display = 'none'; // Скрываем сообщение об ошибке при нажатии на крестик
+        });
+    });
+    </script>

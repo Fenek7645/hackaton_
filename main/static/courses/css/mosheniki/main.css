@@ -49,10 +49,10 @@ body {
     position: absolute;
   }
   .icon {
-    top: 1103px;
-    left: 540px;
-    width: 1724px;
-    height: 1724px;
+    top: 1490px;
+    left: 899px;
+    width: 1000px;
+    height: 1000px;
     object-fit: cover;
   }
   .item {
@@ -180,10 +180,10 @@ body {
     color: var(--color-darkorchid);
   }
   .icon1 {
-    top: 139px;
-    left: 893px;
-    width: 1143px;
-    height: 1143px;
+    top: 255px;
+    left: 980px;
+    width: 927px;
+    height: 927px;
     object-fit: contain;
   }
   .group-child {
@@ -320,7 +320,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1920px;
+    width: 100%;
   }
   .div {
     position: relative;
