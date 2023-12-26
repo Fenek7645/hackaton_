@@ -196,7 +196,7 @@ body {
 .div9 {
   top: 0;
   left: 0;
-  font-weight: 300;
+  font-weight: 500;
   display: inline-block;
 }
 .child,
@@ -220,7 +220,7 @@ body {
   font-size: 26px;
   font-family: var(--font-asket-extended);
   color: var(--color-darkslategray);
-  text-align: left;
+  text-align: center;
   display: inline-block;
   width: 302px;
   height: 26px;
@@ -233,9 +233,11 @@ body {
   position: absolute;
   top: 0;
   left: 1407px;
-  width: 315px;
+  width: auto;
   height: 33px;
 }
+
+
 .div11 {
   top: 0;
   font-weight: 500;

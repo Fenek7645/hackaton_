@@ -84,14 +84,14 @@ body {
 .louze324gmailcom {
   position: absolute;
   top: 0;
-  left: 9px;
+  left: 1px;
   font-size: 26px;
   font-family: var(--font-asket-extended);
   color: var(--color-darkslategray);
-  text-align: left;
+  text-align: center;
   display: inline-block;
-  width: auto;
-  height: 26px;
+  width: 315px;
+  height: 33px;
 }
 .button {
   cursor: pointer;

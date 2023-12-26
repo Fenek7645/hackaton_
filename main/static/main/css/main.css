@@ -50,7 +50,7 @@ main .features h1{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    top: 3%;
+    top: 3.5%;
     left: 5%;
     z-index: 2;
 }
@@ -103,12 +103,12 @@ main .btns_main a:active{ background-color: #B964FF;}
 main .btns_main_about a{
     width: 95px;
     height: 24px;
-    font-size: 24px;
+    font-size: 25px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
     position: absolute;
-    top: 34px;
+    top: 3.5%;
     left: 670px;
     color: #3F3F3F;
     display: block;
@@ -121,12 +121,12 @@ main .btns_main_about a{
 main .btns_main_curs a{
     width: 95px;
     height: 24px;
-    font-size: 24px;
+    font-size: 25px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
     position: absolute;
-    top: 34px;
+    top: 3.5%;
     left: 780px;
     color: #3F3F3F;
     display: block;
@@ -297,7 +297,7 @@ main .features_password b{
 
 
 main .btns_main_email a{
-    width: auto;
+    width: 302px;
     height: 33px;
     font-size: 24px;
     font-style: normal;

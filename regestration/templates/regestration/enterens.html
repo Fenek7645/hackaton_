@@ -13,14 +13,13 @@
               <div class="col-md-6">
                   <div class="login-container">
                       <h2 class="login-title">Вход</h2>
-                      {% if form.errors %}
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert" id="errorAlert">
-                            <strong>Ошибка!</strong> Пожалуйста, проверьте введенные данные.
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                      {% endif %}
+                      {% if messages %}
+                            <ul class="messages">
+                                {% for message in messages %}
+                                    <li class="error">{{ message }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
                       <form method="post">
                           {% csrf_token %}
                           <div class="form-group">

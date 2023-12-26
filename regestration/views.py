@@ -1,23 +1,40 @@
-from django.shortcuts import render, HttpResponseRedirect
+from django.shortcuts import render, HttpResponseRedirect, redirect
 from django.contrib import messages
-from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-from regestration.forms import UserLoginForm, UserRegistrationForm, UserProfileForm
+from regestration.forms import UserLoginForm, CustomUserCreationForm, UserProfileForm
 from django.contrib import auth
 # Создаём функции для вывода html страницы
 from django.urls import reverse
 
-def regestration(request):
-    if request.method == "POST":
-        form = UserRegistrationForm(data=request.POST)
+def register(request):
+    if request.method == 'POST':
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
-            form.save()
-            return HttpResponseRedirect(reverse('enterens'))
+            username = form.cleaned_data['username']
+            email = form.cleaned_data['email']
+            first_name = form.cleaned_data['first_name']
+            last_name = form.cleaned_data['last_name']
+            password = form.cleaned_data['password']
+            
+            # Проверка на уникальность имени пользователя и email
+            if User.objects.filter(username=username).exists():
+                # Логин уже занят
+                error_message = 'Этот логин уже занят.'
+                return render(request, 'regestration/regestration.html', {'form': form, 'error_message': error_message})
+            elif User.objects.filter(email=email).exists():
+                # Email уже занят
+                error_message = 'Эта почта уже занята.'
+                return render(request, 'regestration/regestration.html', {'form': form, 'error_message': error_message})
+            else:
+                # Создание пользователя
+                user = User.objects.create_user(username=username, email=email, first_name=first_name, last_name=last_name, password=password)
+                user.save()
+                return redirect('login')  # Перенаправление на страницу входа после успешной регистрации
     else:
-        form = UserRegistrationForm()
-    
-    context = {'form': form} 
-    return render(request, 'regestration/regestration.html', context)
+        form = CustomUserCreationForm()
+    return render(request, 'regestration/regestration.html', {'form': form})
+
 
 
 def enterens(request):
@@ -59,15 +76,3 @@ def change_password(request):
             messages.error(request, 'Пароли не совпадают. Пожалуйста, попробуйте снова.')
 
     return render(request, 'password_change.html')
-
-
-def change_password(request):
-    if request.method == 'POST':
-        form = PasswordChangeForm(request.user, request.POST)
-        if form.is_valid():
-            user = form.save()
-            #update_session_auth_hash(request, user)  # Важно обновить хэш сессии
-            return HttpResponseRedirect(reverse('profile'))  # Редирект на успешное изменение пароля
-    else:
-        form = PasswordChangeForm(request.user)
-    return render(request, 'password_change.html', {'form': form})
