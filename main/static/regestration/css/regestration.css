@@ -26,11 +26,6 @@ button[type="submit"] {
     border-radius: 18px;
 }
 
-.username{
-    background-color: #FFC800;
-}
-
-
 /* Стили для кнопки отправки формы */
 button[type="submit"] {
     background-color: #3F3F3F;
@@ -45,4 +40,11 @@ button[type="submit"]:hover {
 /* Стили для заголовка */
 h2 {
     text-align: center;
+}
+
+
+.errorlist {
+    color: red;
+    padding-left: 19px;
+    height: 18px;
 }

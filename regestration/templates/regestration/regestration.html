@@ -10,18 +10,10 @@
 </head>
 <body>
   <div>
-      {% if error_message %}
-        <p>{{ error_message }}</p>
-      {% endif %} 
       <form method="post">
           <h2>Регестрация</h2>
           {% csrf_token %}
-          <input type="text" name="username" placeholder="Логин" required>
-          <input type="email" name="email" placeholder="Почта" required>
-          <input type="text" name="first_name" placeholder="Имя" required>
-          <input type="text" name="last_name" placeholder="Фамилия" required>
-          <input type="password" name="password" placeholder="Пароль" required>
-          <input type="password" name="confirm_password" placeholder="Подтвердите пароль" required>
+          {{form.as_p}}
           <button type="submit">Зарегистрироваться</button>
           <div class="form-footer">
             <b>Уже Зарегистрированы?</b>

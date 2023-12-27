@@ -8,3 +8,81 @@
     <title>Игра</title>
     <link rel="stylesheet" href="{% static 'game/css/game1.css' %}" />
   </head>
+  <body id="content">
+    <div class="div">
+      <div class="bg-parent">
+        <div class="bg">
+          <div class="bg-child"></div>
+        </div>
+        <div class="rectangle-parent">
+          <div class="group-child"></div>
+          <div class="div1">1 из 10</div>
+          <div class="div2">
+            <span>ОЧКИ БЕЗОПАСНОСТИ: </span>
+            <span class="span">100</span>
+          </div>
+          <div class="div3"  id="contentToUpdate">Ваши действия?</div>
+          <div class="div4">Вы увидели новое сообщение от вашего друга:</div>
+          <div class="div5">
+            <div class="div6">
+              <div class="child"></div>
+              <div class="div7">- Привет, займешь 500 рублей до завтра?</div>
+            </div>
+            <div class="div8">
+              <div class="item"></div>
+              <div class="div9">Максим</div>
+              <div class="div10">С.</div>
+              <div class="div11">?</div>
+            </div>
+          </div>
+        </div>
+        <button class="button" id="replaceButton">
+          <div class="inner"></div>
+          <div class="div12">Тут что-то не так, позвоню ему</div>
+        </button>
+        <button class="button1" id="replaceButton1">
+          <div class="rectangle-div"></div>
+          <div class="div13">Помогу чем смогу</div>
+        </button>
+        <button class="button2" id="replaceButton2">
+          <div class="child1"></div>
+          <div class="div14">Надо помочь другу!</div>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.getElementById('replaceButton').addEventListener('click', function() {
+      fetch('question_1_2') // Загрузка другого HTML-файла
+          .then(response => response.text())
+          .then(data => {
+              // Замена содержимого элемента с id="content" на новый HTML-код
+              document.getElementById('content').innerHTML = data;
+          })
+          .catch(error => console.error('Ошибка:', error));
+  });
+</script>
+<script>
+  document.getElementById('replaceButton1').addEventListener('click', function() {
+      fetch('question_1_1') // Загрузка другого HTML-файла
+          .then(response => response.text())
+          .then(data => {
+              // Замена содержимого элемента с id="content" на новый HTML-код
+              document.getElementById('content').innerHTML = data;
+          })
+          .catch(error => console.error('Ошибка:', error));
+  });
+</script>
+<script>
+  document.getElementById('replaceButton2').addEventListener('click', function() {
+      fetch('question_1_3') // Загрузка другого HTML-файла
+          .then(response => response.text())
+          .then(data => {
+              // Замена содержимого элемента с id="content" на новый HTML-код
+              document.getElementById('content').innerHTML = data;
+          })
+          .catch(error => console.error('Ошибка:', error));
+  });
+</script>

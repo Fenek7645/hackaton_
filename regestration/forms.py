@@ -1,3 +1,4 @@
+from typing import Any
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm, UserChangeForm
 from regestration.models import User
@@ -16,7 +17,7 @@ class UserLoginForm(AuthenticationForm):
     class Meta:
         model = User
         fields = ('username', 'password')
-        
+
  
 class UserProfileForm(UserChangeForm):
     email = forms.CharField(widget=forms.EmailInput(attrs={
@@ -32,33 +33,37 @@ class UserProfileForm(UserChangeForm):
     image = forms.ImageField(widget=forms.FileInput(attrs={
         'class': "custom-file-input",
     }))
-       
-    
-    
+
+
+class SignUpForm(forms.ModelForm):
+    username = forms.CharField(label=False, widget=forms.TextInput(attrs={'placeholder': 'Логин', 'class': 'username'}))
+    password = forms.CharField(label=False, widget=forms.PasswordInput(attrs={'placeholder': 'Пароль', 'class': 'password'}))
+    password2 = forms.CharField(label=False, widget=forms.PasswordInput(attrs={'placeholder': 'Повтор пароля', 'class': 'password2'}))
+    email = forms.EmailField(label=False, widget=forms.EmailInput(attrs={'placeholder': 'Почта', 'class': 'email'}))
+    first_name = forms.CharField(label=False, widget=forms.TextInput(attrs={'placeholder': 'Имя', 'class': 'first_name'}))
+    last_name = forms.CharField(label=False, widget=forms.TextInput(attrs={'placeholder': 'Фамилия', 'class': 'last_name'}))
     
     class Meta:
         model = User
-        fields = ("email", "image", "username")
-
-
-class CustomUserCreationForm(forms.ModelForm):
-    password = forms.CharField(label='Password', widget=forms.PasswordInput)
-    confirm_password = forms.CharField(label='Confirm Password', widget=forms.PasswordInput)
-
-    class Meta:
-        model = User
-        fields = ('username', 'first_name', 'last_name', 'email', 'password', 'confirm_password')
+        fields = ['username', 'email', 'first_name', 'last_name', 'password', 'password2']
+        
+        
+    def clean_password2(self):
+        cd = self.cleaned_data
+        if cd['password2'] != cd['password']:
+            raise forms.ValidationError("Пароли не совпадают", code='password_mismatch')
+        return cd['password']
     
-    def clean_confirm_password(self):
-        password = self.cleaned_data.get('password')
-        confirm_password = self.cleaned_data.get('confirm_password')
-        if password and confirm_password and password != confirm_password:
-            raise forms.ValidationError("Пароли не совпадают")
-        return confirm_password
-
-    def save(self, commit=True):
-        user = super().save(commit=False)
-        user.set_password(self.cleaned_data["password"])
-        if commit:
-            user.save()
-        return user
+    def clean_email(self):
+        email = self.cleaned_data['email']
+        if User.objects.filter(email=email).exists():
+            self.add_error('email', forms.ValidationError("Такая почта уже существует"))
+            self.fields['email'].widget.attrs.update({'class': 'err'})
+        return email
+    
+    def clean_username(self):
+        username = self.cleaned_data['username']
+        if User.objects.filter(username=username).exists():
+            self.add_error('username', forms.ValidationError("Такой логин уже существет"))
+            self.fields['username'].widget.attrs.update({'class': 'err'})
+        return username
