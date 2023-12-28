@@ -114,6 +114,7 @@ body {
     left: 707px;
     font-size: var(--font-size-17xl);
     font-weight: 500;
+    color: #fff;
     display: inline-block;
   }
   .group-item {

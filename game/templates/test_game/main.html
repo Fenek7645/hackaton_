@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <title>Игра</title>
-    <link rel="stylesheet" href="{% static 'game/css/game1.css' %}" />
+    <link rel="stylesheet" href="{% static 'game/css/main.css' %}" />
   </head>
   <body>
     <div class="frame-parent">
@@ -19,8 +19,10 @@
           <div class="div3">100/100</div>
         </div>
         <div class="rectangle-group">
+          <a href="{% url 'home' %}">
           <div class="group-item"></div>
           <div class="div4">На главную</div>
+          </a>
         </div>
         <div class="rectangle-container">
           <div class="group-item"></div>
