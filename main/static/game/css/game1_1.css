@@ -50,6 +50,10 @@ body {
     display: inline-block;
     width: 404px;
   }
+
+  .div3 span {
+    font-size: 40px;
+  }
   .child {
     top: 0;
     left: 0;

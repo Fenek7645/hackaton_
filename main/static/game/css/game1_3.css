@@ -42,6 +42,10 @@ body {
   .div3 {
     position: absolute;
   }
+
+  .div3 span{
+    font-size: 40px;
+  }
   .div3 {
     top: 50px;
     left: 206px;

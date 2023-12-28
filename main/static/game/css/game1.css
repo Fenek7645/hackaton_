@@ -59,7 +59,12 @@ body {
   top: 50px;
   left: 98px;
   width: 404px;
+
 }
+.div2 span{
+  font-size: 40px;
+}
+
 .div2,
 .div3,
 .div4 {

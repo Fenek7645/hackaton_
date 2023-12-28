@@ -44,6 +44,11 @@ body {
     font-weight: 500;
     width: 404px;
   }
+
+  .div1 span {
+    font-size: 40px;
+  }
+
   .div1,
   .div2,
   .div3 {

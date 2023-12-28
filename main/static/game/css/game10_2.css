@@ -42,6 +42,11 @@ body {
     position: absolute;
     display: inline-block;
   }
+
+  .div3 span{
+    font-size: 40px;
+  }
+
   .div3 {
     top: 50px;
     left: 98px;

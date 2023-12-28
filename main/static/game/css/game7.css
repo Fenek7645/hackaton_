@@ -54,6 +54,11 @@ body {
 .span {
   color: var(--color-darkorchid);
 }
+
+.div2 span {
+  font-size: 40px;
+}
+
 .div2 {
   top: 50px;
   left: 98px;

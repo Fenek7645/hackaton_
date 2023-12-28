@@ -58,3 +58,21 @@ def change_password(request):
     else:
         form = PasswordChangeForm(request.user)
     return render(request, 'password_change.html', {'form': form})
+
+
+def download_file(request):
+    # Путь к файлу, который нужно скачать
+    file_path = '/path/to/your/file.txt'  # Укажите путь к вашему файлу
+
+    # Открыть файл для чтения как бинарный файл
+    with open(file_path, 'rb') as file:
+        response = HttpResponse(file.read(), content_type='application/force-download')
+
+        # Определение имени файла для скачивания
+        file_name = file_path.split('/')[-1]  # Получение имени файла из пути
+        response['Content-Disposition'] = f'attachment; filename="{file_name}"'
+
+        return response
+
+def show_download_page(request):
+    return render(request, 'template.html')

@@ -55,6 +55,10 @@ body {
 .span {
   color: var(--color-darkorchid);
 }
+.div2 span {
+  font-size: 40px;
+}
+
 .div2,
 .div3 {
   position: absolute;

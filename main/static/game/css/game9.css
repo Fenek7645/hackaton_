@@ -54,6 +54,11 @@ body {
 .span {
   color: #b964ff;
 }
+
+.div2 span{
+  font-size: 40px;
+}
+
 .div2,
 .div3,
 .div4 {

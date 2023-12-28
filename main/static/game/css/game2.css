@@ -83,6 +83,10 @@ body {
   color: var(--color-darkslategray);
   text-align: center;
 }
+.div2 span{
+  font-size: 40px;
+}
+
 .button,
 .div3,
 .div4 {
