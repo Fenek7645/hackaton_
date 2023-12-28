@@ -19,7 +19,7 @@
           <div class="div1">1 из 10</div>
           <div class="div2">
             <span>ОЧКИ БЕЗОПАСНОСТИ: </span>
-            <span class="span">100</span>
+            <span class="span" id="userPoints"></span>
           </div>
           <div class="div3"  id="contentToUpdate">Ваши действия?</div>
           <div class="div4">Вы увидели новое сообщение от вашего друга:</div>
@@ -58,37 +58,3 @@
     </div>
   </body>
 </html>
-
-<script>
-  document.getElementById('replaceButton').addEventListener('click', function() {
-      fetch('question_1_2') // Загрузка другого HTML-файла
-          .then(response => response.text())
-          .then(data => {
-              // Замена содержимого элемента с id="content" на новый HTML-код
-              document.getElementById('content').innerHTML = data;
-          })
-          .catch(error => console.error('Ошибка:', error));
-  });
-</script>
-<script>
-  document.getElementById('replaceButton1').addEventListener('click', function() {
-      fetch('question_1_1') // Загрузка другого HTML-файла
-          .then(response => response.text())
-          .then(data => {
-              // Замена содержимого элемента с id="content" на новый HTML-код
-              document.getElementById('content').innerHTML = data;
-          })
-          .catch(error => console.error('Ошибка:', error));
-  });
-</script>
-<script>
-  document.getElementById('replaceButton2').addEventListener('click', function() {
-      fetch('question_1_3') // Загрузка другого HTML-файла
-          .then(response => response.text())
-          .then(data => {
-              // Замена содержимого элемента с id="content" на новый HTML-код
-              document.getElementById('content').innerHTML = data;
-          })
-          .catch(error => console.error('Ошибка:', error));
-  });
-</script>
