@@ -83,3 +83,5 @@ def rule_social_network(requset):
     return render(requset, 'courses/defe_data/rule_social_network.html')
 
 #----------Защита-личных-данных-конец----------------#
+
+

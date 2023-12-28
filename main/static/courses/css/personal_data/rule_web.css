@@ -133,6 +133,11 @@ body {
   margin: 0;
   color: var(--color-darkslategray);
 }
+
+.p1 a{
+  text-decoration-line: underline;
+  color: blue;
+}
 .div7 {
   position: absolute;
   top: 178px;

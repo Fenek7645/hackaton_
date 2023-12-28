@@ -2,7 +2,6 @@ from django.utils import timezone
 from .models import UserPageVisit
 
 
-
 class UserPageVisitMiddleware:
     def __init__(self, get_response):
         self.get_response = get_response
