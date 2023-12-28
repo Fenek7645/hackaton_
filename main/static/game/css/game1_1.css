@@ -219,6 +219,7 @@ body {
     position: absolute;
     left: 707px;
     width: 506px;
+    text-decoration: none;
   }
   .frame-child {
     top: 909px;
@@ -261,3 +262,6 @@ body {
     font-family: var(--font-asket-extended);
   }
   
+  .a {
+    text-decoration: none;
+  }

@@ -39,11 +39,15 @@
           <span class="predictable-password"
             >Этот пароль очень предсказуемый и его легко подобрать, даже не
             используя сторонних программ.<br />Как создать надежный пароль,
-            смотрите </span
-          ><span class="here">тут</span>
+            смотрите </span>
+            <a href="{% url 'password' %}">
+            <span class="here">тут</span>
+            </a>
         </div>
+        <a href="{% url 'game5' %}">
         <div class="rectangle-4">
           <span class="next-question">Следующий вопрос</span>
+        </a>
         </div>
       </div>
     </div>
