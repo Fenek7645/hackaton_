@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-asket-extended: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+    /* font sizes */
+    --font-size-17xl: 36px;
+    --font-size-5xl: 24px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-darkorchid: #b964ff;
+  
+    /* Border radiuses */
+    --br-smi: 13px;
+  }
+  .group-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-smi);
+    background-color: #3f3f3f;
+    width: 600px;
+    height: 978px;
+  }
+  .div2 {
+    position: absolute;
+    top: 15px;
+    left: 252px;
+    font-weight: 300;
+  }
+  .span {
+    color: var(--color-darkorchid);
+  }
+  .div3,
+  .div4 {
+    position: absolute;
+  }
+  .div3 {
+    top: 50px;
+    left: 98px;
+    font-weight: 500;
+    display: inline-block;
+    width: 404px;
+  }
+  .div4 {
+    top: 489px;
+    left: 27px;
+    font-size: var(--font-size-17xl);
+    width: 546px;
+    height: 184px;
+  }
+  .div4,
+  .div5,
+  .div6 {
+    display: inline-block;
+  }
+  .div5 {
+    position: absolute;
+    top: 702px;
+    left: 47px;
+    font-weight: 300;
+    width: 506px;
+  }
+  .div6 {
+    top: 120px;
+    left: 0;
+    font-size: 32px;
+    font-weight: 500;
+    height: 48px;
+  }
+  .div6,
+  .div7,
+  .rectangle-parent {
+    position: absolute;
+    width: 600px;
+  }
+  .div7 {
+    top: 86px;
+    left: 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: #e95035;
+    display: inline-block;
+    height: 30px;
+  }
+  .rectangle-parent {
+    top: 51px;
+    left: 660px;
+    height: 978px;
+  }
+  .div8,
+  .frame-child {
+    position: absolute;
+    left: 707px;
+    width: 506px;
+  }
+  .frame-child {
+    top: 909px;
+    border-radius: var(--br-smi);
+    background-color: var(--color-darkorchid);
+    height: 80px;
+  }
+  .div8 {
+    top: 922px;
+    font-size: var(--font-size-17xl);
+    font-weight: 500;
+    display: inline-block;
+  }
+  .group-parent {
+    background-color: var(--color-white);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  .div1,
+  .group-parent,
+  .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+  }
+  .icon {
+    top: 232px;
+    left: 817px;
+    border-radius: var(--br-smi);
+    width: 286px;
+    height: 286px;
+    object-fit: cover;
+  }
+  .div {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    text-align: center;
+    font-size: var(--font-size-5xl);
+    color: var(--color-white);
+    font-family: var(--font-asket-extended);
+  }
+  

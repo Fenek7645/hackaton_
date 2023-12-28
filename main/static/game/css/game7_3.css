@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-asket-extended: Asket Extended, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  
+    /* font sizes */
+    --font-size-5xl: 24px;
+    --font-size-17xl: 36px;
+  
+    /* Colors */
+    --color-darkslategray: #3f3f3f;
+    --color-darkorchid: #b964ff;
+    --color-white: #fff;
+  
+    /* Border radiuses */
+    --br-smi: 13px;
+  }
+
+  .group-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-smi);
+    background-color: var(--color-darkslategray);
+    width: 600px;
+    height: 978px;
+  }
+  .div2 {
+    position: absolute;
+    top: 15px;
+    left: 253px;
+    font-weight: 300;
+  }
+  .span {
+    color: var(--color-darkorchid);
+  }
+  .div3,
+  .div4 {
+    position: absolute;
+  }
+  .div3 {
+    top: 50px;
+    left: 98px;
+    font-weight: 500;
+    display: inline-block;
+    width: 404px;
+  }
+  .div4 {
+    top: 454px;
+    left: 27px;
+    font-size: var(--font-size-17xl);
+    width: 546px;
+    height: 114px;
+  }
+  .div4,
+  .div5,
+  .div6 {
+    display: inline-block;
+  }
+  .div5 {
+    position: absolute;
+    top: 687px;
+    left: 47px;
+    font-weight: 300;
+    width: 512px;
+  }
+  .div6 {
+    top: 135px;
+    left: 0;
+    font-size: 32px;
+    font-weight: 500;
+    height: 48px;
+  }
+  .div6,
+  .div7,
+  .rectangle-parent {
+    position: absolute;
+    width: 600px;
+  }
+  .div7 {
+    top: 86px;
+    left: 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: #21e74c;
+    display: inline-block;
+    height: 30px;
+  }
+  .rectangle-parent {
+    top: 51px;
+    left: 660px;
+    height: 978px;
+  }
+  .div8,
+  .frame-child {
+    position: absolute;
+    left: 707px;
+    width: 506px;
+  }
+  .frame-child {
+    top: 909px;
+    border-radius: var(--br-smi);
+    background-color: var(--color-darkorchid);
+    height: 80px;
+  }
+  .div8 {
+    top: 922px;
+    font-size: var(--font-size-17xl);
+    font-weight: 500;
+    display: inline-block;
+  }
+  .group-parent {
+    background-color: var(--color-white);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  .div1,
+  .group-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+  }
+  .group-item {
+    border-radius: var(--br-smi);
+    background-color: var(--color-darkorchid);
+  }
+  .group-item,
+  .rectangle-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 505px;
+    height: 138px;
+  }
+  .div10,
+  .freemoneyru {
+    position: absolute;
+    top: 0;
+    left: 45px;
+    font-weight: 300;
+    display: inline-block;
+    width: 207px;
+  }
+  .div10 {
+    top: 43px;
+    left: 0;
+    font-size: 16px;
+    width: 297px;
+  }
+  .div9,
+  .group-container {
+    position: absolute;
+    top: 26px;
+    left: 104px;
+    width: 297px;
+    height: 66px;
+  }
+  .group-container {
+    top: 291px;
+    left: 708px;
+    width: 505px;
+    height: 138px;
+    color: var(--color-darkslategray);
+  }
+  .div {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    text-align: center;
+    font-size: var(--font-size-5xl);
+    color: var(--color-white);
+    font-family: var(--font-asket-extended);
+  }
+  
