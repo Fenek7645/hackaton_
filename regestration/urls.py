@@ -11,4 +11,5 @@ urlpatterns = [
     path('profile/', views.profile, name="profile"),
     path('logout/', auth_views.LogoutView.as_view(), name= "logout"),
     path('accounts/password/change/',  views.change_password, name='passwordchange'),
+    path('download-file/', views.download_file, name='download_file'),
 ]

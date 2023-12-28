@@ -5,7 +5,8 @@ from regestration.forms import UserLoginForm, SignUpForm, UserProfileForm
 from django.contrib import auth, messages
 from django.contrib.auth import update_session_auth_hash
 from django.urls import reverse
-import time
+from django.http import HttpResponse, FileResponse
+import os
 def register(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
@@ -40,9 +41,13 @@ def enterens(request):
 
 @login_required(login_url='')
 def profile(request):
+    access_granted = False
+    if 'access_button' in request.GET and request.GET['access_button'] == 'true':
+        access_granted = True
+
     form = UserProfileForm(instance=request.user)
     context = {'form': form}
-    return render(request, 'regestration/profile.html')
+    return render(request, 'regestration/profile.html', {'access_granted': access_granted})
 
 @login_required
 def change_password(request):
@@ -59,20 +64,20 @@ def change_password(request):
         form = PasswordChangeForm(request.user)
     return render(request, 'password_change.html', {'form': form})
 
-
+@login_required
 def download_file(request):
-    # Путь к файлу, который нужно скачать
-    file_path = '/path/to/your/file.txt'  # Укажите путь к вашему файлу
+    # Путь к файлу, который вы хотите скачать
+    file_path = 'hackaton/regestration/сертификат.pdf'  # Укажите путь к вашему файлу
 
-    # Открыть файл для чтения как бинарный файл
-    with open(file_path, 'rb') as file:
-        response = HttpResponse(file.read(), content_type='application/force-download')
-
-        # Определение имени файла для скачивания
-        file_name = file_path.split('/')[-1]  # Получение имени файла из пути
-        response['Content-Disposition'] = f'attachment; filename="{file_name}"'
-
-        return response
-
-def show_download_page(request):
-    return render(request, 'template.html')
+    try:
+        if os.path.exists(file_path):
+            file = open(file_path, 'rb')
+            response = FileResponse(file)
+            response['Content-Disposition'] = 'attachment; filename="сертификат.pdf"'
+            return response
+        else:
+            return HttpResponse('Файл не найден')
+    except Exception as e:
+        return HttpResponse(f'Произошла ошибка: {str(e)}')
+    
+    
