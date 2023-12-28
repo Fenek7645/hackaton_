@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Игра</title>
+    <link rel="stylesheet" href="{% static 'game/css/game7_1.css' %}" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="frame">
+        <div class="group">
+          <span class="out-of-7">7 из 10</span>
+          <div class="safety-score">
+            <span class="safety-goggles">ОЧКИ БЕЗОПАСНОСТИ: </span
+            ><span class="empty">90</span>
+          </div>
+          <span class="safety-goggles-score">-10 очков безопасности</span
+          ><span class="provide-data">Предоставлю данные!</span
+          ><span class="phishing-site"
+            >Ваши паспортные данные попали к мошенникам, сайт оказался
+            фишинговым</span
+          ><span class="personal-data-warning"
+            >Никому не предоставляйте свои личные данные, особенно непроверенным
+            источникам!</span
+          >
+          <div class="rectangle"></div>
+        </div>
+        <div class="rectangle-1">
+          <span class="freemoney">freemoney.ru</span
+          ><span class="content-unavailable"
+            >упс..содержимое больше недоступно</span
+          >
+        </div>
+        <div class="rectangle-2"></div>
+        <span class="next-question">Следующий вопрос</span>
+      </div>
+    </div>
+  </body>
+</html>

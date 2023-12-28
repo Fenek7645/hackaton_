@@ -8,18 +8,13 @@ from django.contrib.auth.decorators import login_required
 def game(request):
     return render(request, 'test_game/main.html')
 
-
-
-
 @login_required(login_url='')
 def game1(request):
     return render(request, 'test_game/game1.html')
 
-
 @login_required(login_url='')
 def game1_1(request):
     return render(request, 'test_game/game1_1.html')
-
 
 @login_required(login_url='')
 def game1_2(request):
@@ -55,7 +50,7 @@ def game3_1(request):
 
 @login_required(login_url='')
 def game3_2(request):
-    return render(request, 'test_game/game3_3.html')
+    return render(request, 'test_game/game3_2.html')
 
 @login_required(login_url='')
 def game3_3(request):

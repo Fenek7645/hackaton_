@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Игра</title>
+    <link rel="stylesheet" href="{% static 'game/css/game3_3.css' %}" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="frame">
+        <div class="group">
+          <span class="span">3 из 10</span>
+          <div class="security-scores">
+            <span class="safety-glasses">ОЧКИ БЕЗОПАСНОСТИ: </span
+            ><span class="text-3">90</span>
+          </div>
+          <span class="no-safety-glasses">Вы не потеряли очки безопасности</span
+          ><span class="share-with-friends">Скину друзьям</span>
+          <div class="empty"></div>
+          <img class="icon" alt="" src="{% static 'game/img/quest3.png' %}" />
+          <span class="friends-rating"
+            >Друзья оценили ваше фото по достоинству</span
+          ><span class="photo-warning"
+            >Не выкладывайте фотографии где присутствует информация о Вас, вашем
+            месте жительства в открытый доступ, эти данные могут использовать
+            мошенники</span
+          >
+          <div class="rectangle"></div>
+        </div>
+        <div class="rectangle-1"></div>
+        <span class="next-question">Следующий вопрос</span>
+      </div>
+    </div>
+  </body>
+</html>
