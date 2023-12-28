@@ -48,3 +48,11 @@ h2 {
     padding-left: 19px;
     height: 18px;
 }
+
+.form-footer {
+    text-align: center;
+}
+
+.form-footer a{
+    font-size: 20px;
+}
